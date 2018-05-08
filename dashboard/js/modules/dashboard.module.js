@@ -351,9 +351,6 @@ config.controller('dashboard', ['$scope', '$rootScope', 'dataService', '$timeout
 	    if ($scope.designer.inner < 25) {
 		$scope.designer.inner = 25;
 	    }
-	    if ($scope.designer.inner + 200 >= $scope.designer.outer) {
-	        $scope.designer.outer = $scope.designer.inner + 200;
-	    }
 	}
 
 	$scope.deletePlace = function() {
