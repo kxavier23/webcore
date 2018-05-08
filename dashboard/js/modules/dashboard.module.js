@@ -348,11 +348,8 @@ config.controller('dashboard', ['$scope', '$rootScope', 'dataService', '$timeout
 		$scope.designer.inner = $scope.designer.outer;
 		$scope.designer.outer = x;
 	    }
-	    if ($scope.designer.inner < 50) {
-		$scope.designer.inner = 50;
-	    }
-	    if ($scope.designer.inner + 200 >= $scope.designer.outer) {
-	        $scope.designer.outer = $scope.designer.inner + 200;
+	    if ($scope.designer.inner < 25) {
+		$scope.designer.inner = 25;
 	    }
 	}
 
